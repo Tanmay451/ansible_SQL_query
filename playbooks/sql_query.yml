@@ -1,0 +1,7 @@
+- name: sql query
+  hosts: all
+
+  tasks:
+    - include_vars: ../conf/mysql.cfg
+
+    - include: tasks/sql_query.yml
